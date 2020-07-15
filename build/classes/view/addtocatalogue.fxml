@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.Button?>
+
+<VBox fx:controller="controller.AddToCatalogueController" xmlns:fx="http://javafx.com/fxml/1" alignment="center" prefWidth="300" spacing="10">
+        <GridPane hgap="10" vgap="10" alignment="CENTER">
+            <Label text="Type:" GridPane.rowIndex="0"/>
+            <TextField fx:id="typeTf" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.columnSpan="3" />
+            <Label text="Name:" GridPane.rowIndex="1" />
+            <TextField fx:id="nameTf" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.columnSpan="3" />
+            <Label text="Price:" GridPane.rowIndex="2"/>
+            <TextField fx:id="priceTf" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="3" />
+        </GridPane>
+        
+        <HBox alignment="CENTER">
+            <Button fx:id="addToCatalogueBtn" text="Add To Catalogue" onAction="#addToCatalogue"/>
+        </HBox>
+
+	<stylesheets>
+		<URL value="@computerbuilder.css" />
+	</stylesheets>
+</VBox>
+
